@@ -99,7 +99,7 @@ NLW-Beginner/
 ├── index.html       → Estrutura principal do site
 ├── style.css        → Estilização visual e animações
 ├── script.js        → Lógica JS e integração com a IA
-└── print-do-projeto.png  → (adicione o print aqui)
+└── print-do-projeto.png  → (Print da tela do projeto)
 ```
 
 ---
