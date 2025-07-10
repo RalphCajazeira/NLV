@@ -16,6 +16,7 @@ const questionAI = async (question, game, apiKey) => {
   const model = "gemini-2.5-flash";
   const geminiURL = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
+  // League of Legends
   const questionLOL = `
   ## Especialidade
 Você é um especialista assistente de meta para o jogo ${game}.
@@ -45,6 +46,7 @@ Você é um especialista assistente de meta para o jogo ${game}.
   Aqui está a pergunta do usuário: ${question}
   `;
 
+  // Valorant
   const questionValorant = `
   ## Especialidade
   Você é um especialista assistente de meta para o jogo ${game} .
@@ -74,6 +76,7 @@ Você é um especialista assistente de meta para o jogo ${game}.
   Aqui está a pergunta do usuário: ${question}
 `;
 
+  // CS:GO
   const questionCSGO = `
   ## Especialidade
   Você é um especialista assistente de meta para o jogo ${game}.
@@ -103,6 +106,7 @@ Você é um especialista assistente de meta para o jogo ${game}.
   Aqui está a pergunta do usuário: ${question}
 `;
 
+  // 7 Days to Die
   const question7DTD = `
   ## Especialidade
   Você é um especialista assistente de meta para o jogo 7 Days to Die.
@@ -136,8 +140,10 @@ Você é um especialista assistente de meta para o jogo ${game}.
   Só responda que ainda não tem suporte para esse jogo
   `;
 
+  // Variável que armazena o prompt final
   let promptQuestion = "";
 
+  /// Verifica qual jogo foi passado e define o prompt adequado
   if (game === "lol") {
     promptQuestion = questionLOL;
   } else if (game === "valorant") {
@@ -150,6 +156,7 @@ Você é um especialista assistente de meta para o jogo ${game}.
     promptQuestion = questionOther;
   }
 
+  // Função para lidar com o envio do formulário
   const contents = [
     {
       role: "user",
@@ -161,6 +168,7 @@ Você é um especialista assistente de meta para o jogo ${game}.
     },
   ];
 
+  // Ferramentas disponíveis
   const tools = [
     {
       google_search: {},
@@ -194,6 +202,7 @@ const sendForm = async (event) => {
   const game = gameSelect.value;
   const question = questionInput.value;
 
+  // Verificar se todos os campos estão preenchidos
   if (!apiKey || !game || !question) {
     alert("Por favor, complete todos os campos do formulário.");
     return;
