@@ -9,7 +9,8 @@ Este projeto foi desenvolvido durante o evento **Next Level Week - Edição Begi
 
 ## 🖼️ Preview
 
-![Print do projeto](./print-do-projeto.png)
+<img width="1912" height="924" alt="print-do-projeto" src="https://github.com/user-attachments/assets/8b8ecab4-de2d-482d-8756-1f01d13e0375" />
+
 
 ---
 
@@ -99,7 +100,7 @@ NLW-Beginner/
 ├── index.html       → Estrutura principal do site
 ├── style.css        → Estilização visual e animações
 ├── script.js        → Lógica JS e integração com a IA
-└── print-do-projeto.png  → (Print da tela)
+└── .gitignore       → (Ignorar alguns arquivos)
 ```
 
 ---
