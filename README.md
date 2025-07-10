@@ -1,4 +1,3 @@
-````markdown
 # 🧠 Assistente de Meta para Games — NLW Beginner
 
 Este projeto foi desenvolvido durante o evento **Next Level Week - Edição Beginner** da [Rocketseat](https://rocketseat.com.br), com o objetivo de criar uma aplicação web que funciona como **assistente inteligente de meta para jogos populares** como:
@@ -114,6 +113,3 @@ Feito com 💜 por [Ralph Cajazeira](https://github.com/RalphCajazeira) durante 
 ## 🧠 Licença
 
 Este projeto é livre para estudos e fins educativos. Compartilhe, estude e use como base para ideias ainda mais criativas!
-
-```
-```
